@@ -1,4 +1,4 @@
-RSpec.describe 'POST '/api/v1/auth'', type: :request do
+RSpec.describe 'POST "/api/v1/auth"', type: :request do
     let(:headers) { { HTTP_ACCEPT: 'application/json' } }
 
     describe 'with valid credentials' do
@@ -62,7 +62,7 @@ RSpec.describe 'POST '/api/v1/auth'', type: :request do
             end
         end
 
-        descibe 'an already registered email' do
+        describe 'an already registered email' do
             let!(:registered_user) { create(:user, email: 'coach@craftacademy.se') }
 
             before do
